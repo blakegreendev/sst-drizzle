@@ -1,24 +1,26 @@
 {
   "version": "5",
   "dialect": "pg",
-  "id": "21350f88-40d0-4672-a948-329a615ded4c",
+  "id": "0571004d-93ba-4483-bd55-da23f0c1316b",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
-    "users": {
-      "name": "users",
+    "tblcounter": {
+      "name": "tblcounter",
       "schema": "",
       "columns": {
-        "id": {
-          "name": "id",
-          "type": "integer",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "name": {
-          "name": "name",
+        "counter": {
+          "name": "counter",
           "type": "text",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "'hits'"
+        },
+        "tally": {
+          "name": "tally",
+          "type": "integer",
           "primaryKey": false,
-          "notNull": false
+          "notNull": false,
+          "default": 0
         }
       },
       "indexes": {},

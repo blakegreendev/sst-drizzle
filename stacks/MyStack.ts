@@ -30,7 +30,6 @@ export function API({ stack }: StackContext) {
     routes: {
       "GET /": "packages/functions/src/lambda.handler",
       'GET /migrate': 'packages/functions/src/migrator.handler',
-      'POST /create-user': 'packages/functions/src/createUser.handler',
     },
   });
   stack.addOutputs({
